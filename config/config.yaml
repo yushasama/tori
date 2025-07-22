@@ -1,0 +1,56 @@
+global_poll_interval: 300s
+global_retry_interval: 5000ms
+global_max_retries: 10
+
+sites:
+  - name: "Gorilla Mind"
+    site_url: "https://gorillamind.com"
+    enabled: true
+    notifier:
+      webhook_url: "https://discordapp.com/api/webhooks/1396994202793017487/m4x5w6jtzDPLeW63nRfci1bZAMt7IKrivgDsHxnPiumt4rXEVQRb5m12B8nIaTI_m0oZ"
+      username: "Tori"
+      avatar_url: "https://files.catbox.moe/j1fiqp.png"
+    monitors:
+      - name: "Energy Drinks"
+        enabled: true
+        endpoint_url: "https://gorillamind.com/collections/energy-drinks/products.json"
+        product_ids:
+          - id: 42117358551085
+            label: "sour-watermelon-candy"
+          - id: 41672416788525
+            label: "tiger's blood"
+          - id: 43947026513965
+          #   label: "citrus rain"
+          # - id: 43474632376365
+          #   label: "blue raspberry"
+          # - id: 41605560893485
+          #   label: "black cherry vanilla"
+          # - id: 41605560860717
+          #   label: "white frost"
+          # - id: 41672416755757
+          #   label: "lychee bomb"
+          # - id: 42184340701229
+          #   label: "blackberry lemonade"
+          # - id: 42595442130989
+          #   label: "orange ice dream"
+          # - id: 42352082157613
+          #   label: "berry burst"
+          # - id: 41605560959021
+          #   label: "orange rush"
+          # - id: 43259260600365
+          #   label: "white gummy bear"
+          # - id: 42117358518317
+          #   label: "tropic wave"
+          # - id: 41703881670701
+          #   label: "wild grape"
+          # - id: 41633321418797
+          #   label: "strawberry candy"
+          # - id: 42825908486189
+          #   label: "bombsicle"
+          # - id: 42117358583853
+          #   label: "lucky lemon"
+          # - id: 42358919168045
+          #   label: "mango peach"
+          # - id: 41605560926253
+          #   label: "exotic kiwi"
+
